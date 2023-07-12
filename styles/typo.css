@@ -1,5 +1,6 @@
 .typo {
-  font: 1em/1.8 system-ui, -apple-system, BlinkMacSystemFont, "PingFang SC",
+  /* 行高建议设置成字体大小 1.5~1.75 */
+  font: 1em/1.5 system-ui, -apple-system, BlinkMacSystemFont, "PingFang SC",
     "Helvetica Neue", STHeiti, "Microsoft Yahei", sans-serif;
 }
 
