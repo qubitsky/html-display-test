@@ -1,3 +1,6 @@
 [submodule "html5-test-page"]
 	path = html5-test-page
 	url = git@github.com:cbracco/html5-test-page.git
+[submodule "typo.css"]
+	path = typo.css
+	url = git@github.com:sofish/typo.css.git

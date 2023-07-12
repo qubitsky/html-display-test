@@ -1,0 +1,32 @@
+.font-initial {
+  font-family: initial;
+}
+.font-sans-default {
+  font-family: sans-serif;
+}
+.font-serif-default {
+  font-family: serif;
+}
+.font-system {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+.font-sans {
+  font-family: "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+    "Helvetica Neue", sans-serif;
+}
+.font-serif {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.font-hei {
+  font-family: "PingFang SC", "Helvetica Neue", STHeiti, "Microsoft Yahei",
+    sans-serif;
+}
+.font-song {
+  font-family: "Songti SC", "Times New Roman", STSong, SimSun, serif;
+}
+.font-kai {
+  font-family: "Kaiti SC", Georgia, STKaiti, KaiTi, serif;
+}
+.font-mobile {
+  font-family: system-ui, -apple-system, Arial, sans-serif;
+}
