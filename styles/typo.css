@@ -1,9 +1,10 @@
 .typo {
   /* 行高建议设置成字体大小 1.5~1.75 */
-  font: 1em/1.5 system-ui, -apple-system, BlinkMacSystemFont, "PingFang SC",
-    "Helvetica Neue", STHeiti, "Microsoft Yahei", sans-serif;
+  font: 300 1em/1.75 "PingFang SC", "Helvetica Neue", STHeiti, "Microsoft Yahei",
+    sans-serif;
 }
 
+/* 标题 */
 .typo h1,
 .typo h2,
 .typo h3,
@@ -19,10 +20,12 @@
   margin-top: 1.2em;
   margin-bottom: 0.6em;
   line-height: 1.35;
+  font-weight: 400;
 }
 
 .typo h1,
 .typo-h1 {
+  /* 缩放比例 */
   font-size: 2em;
 }
 
@@ -46,4 +49,122 @@
 .typo-h5,
 .typo-h6 {
   font-size: 1.2em;
+}
+
+/* 保证块/段落之间的空白隔行 */
+.typo p,
+.typo pre,
+.typo ul,
+.typo ol,
+.typo dl,
+.typo form,
+.typo hr,
+.typo table,
+.typo blockquote,
+.typo-p,
+.typo-pre,
+.typo-ul,
+.typo-ol,
+.typo-dl,
+.typo-form,
+.typo-hr,
+.typo-table,
+.typo-blockquote {
+  margin-bottom: 1.2em;
+}
+
+.typo ol,
+.typo ul,
+.typo-ol,
+.typo-ul {
+  padding-left: 2em;
+}
+
+.typo figure,
+.typo blockquote,
+.typo-figure,
+.typo-blockquote {
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+.typo pre,
+.typo-pre {
+  overflow: auto;
+}
+
+.typo a {
+  /* 超链接默认不使用底线 */
+  text-decoration: inherit;
+}
+
+/* 统一上标和下标 */
+.typo sub,
+.typo sup,
+.typo-sub,
+.typo-sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+.typo sup,
+.typo-sup {
+  top: -0.5em;
+}
+
+.typo sub,
+.typo-sub {
+  bottom: -0.25em;
+}
+
+/* Firefox 以外，元素没有下划线，需添加 */
+.typo abbr,
+.typo-abbr {
+  border-bottom: 1px dotted;
+  text-decoration: none;
+  /* 添加鼠标问号，进一步确保应用的语义是正确的（要知道，交互他们也有洁癖，如果你不去掉，那得多花点口舌） */
+  cursor: help;
+}
+
+/* 着重号，只能在少量（少于100个字符）且全是全角字符的情况下使用 */
+.typo em,
+.typo-em {
+  font-style: inherit;
+  position: relative;
+}
+
+.typo em:after,
+.typo-em:after {
+  position: absolute;
+  top: 0.65em;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  content: "・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・";
+}
+
+.typo cite,
+.typo-cite {
+  font-style: inherit;
+  font-weight: 400;
+}
+
+/* 去掉各Table cell 的边距并让其边重合 */
+.typo table,
+.typo-table {
+  border-collapse: collapse;
+}
+
+/* 同 ul/ol，在文章中应用 table 基本格式 */
+.typo table th,
+.typo table td,
+.typo table caption,
+.typo-table th,
+.typo-table td,
+.typo-table caption {
+  border: 1px solid;
+  padding: 0.5em 1em;
 }
